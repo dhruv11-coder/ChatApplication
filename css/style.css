@@ -1,0 +1,86 @@
+/*to make the picture come in between*/
+
+body{
+    height: 100vh;
+    /*background-image: linear-gradient(rgb(255,255,255), blue)*/
+    background-image: url('image2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+
+/* to manage the size of the picture*/
+    width:80px;
+    height:80px;
+}
+
+
+h1{
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    max-width: 955px; /* container ki max-width set karne se sab center mein aa jaega*/
+    border: 2px solid black;
+    margin: auto; /* container center mein aa jaega*/
+    height: 60vh; /* heigh thumne viewport ke hisab se rakhi hai*/
+    padding: 33px;
+    overflow-y : auto; /* jab messages badhte jaenge tab ye y pe flow hoga*/
+    margin-bottom: 16px;
+
+    background-image: url('image3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.message{
+    background-color: grey;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+.left{
+    float: left;
+    clear: both; /* iske side mein koi nahi aaega ab */
+}
+
+#send-container
+{
+    text-align: center; /* ye display:block or margin:auto karke middle mein nahi aa sakta 
+                        tha kyuki isne pehle se hee 100% width le rakhi thee. islyeh 
+                        humne isme text align use kiya */ 
+    display: block;
+    margin:auto; /* ab hum isme display or margin use kar sakte hai*/
+    max-width: 985px;
+    width: 100%;
+}
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
+.btn{
+    margin: 0 5px;
+    width: 9%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
